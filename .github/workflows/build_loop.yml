@@ -288,6 +288,9 @@ jobs:
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
 
+          #Set Lyumjev times to 62 min peak, 5 min delay and 300 dia time 
+          curl https://github.com/kireffoh/LoopKit/commit/2c3a802a3ce90aa4db2f655152f23da65fa50f0c.patch | git apply -v --directory=LoopKit
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
